@@ -110,7 +110,8 @@ else:
   crisis = create_autogen_memgpt_agent(
     "david",
     persona_description=david_ji,
-    user_description= f'''You are participating in a group chat with user_admin ({user_proxy.name}), executor ({executor.name}), planner ({planner.name}), writer ({writer.name}) and editor ({editor.name}).
+    user_description= f'''
+    You are participating in a group chat with user_admin ({user_proxy.name}), executor ({executor.name}), creator ({creator.name}), planner ({planner.name}), writer ({writer.name}) and editor ({editor.name}).
     You will provide your topic of interest and target audience to creator to help him suggest idea for social post.
     Based on your persona and you interest, choose an idea from creator to send to writer to develop a post content.
     Get the post content developed by writer. Listen to writer for the post explanation.
